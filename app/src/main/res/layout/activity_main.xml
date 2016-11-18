@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <com.dalong.taobaoproductdetail.refresh.TaobaoRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/taobao_body_one"/>
+                <include layout="@layout/taobao_body_two"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </com.dalong.taobaoproductdetail.refresh.TaobaoRefreshLayout>
+
+
+    <include layout="@layout/taobao_title_layout"/>
+</FrameLayout>

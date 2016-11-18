@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/transparent"
+        android:paddingTop="@dimen/spacing_normal">
+
+        <ImageView
+            android:id="@+id/iv_good_detai_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/spacing_smallest"
+            android:paddingLeft="@dimen/spacing_smaller"
+            android:paddingRight="@dimen/spacing_small"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:paddingTop="@dimen/spacing_smallest"
+            android:gravity="center_vertical"
+            android:textColor="@color/transparent"
+            android:paddingLeft="@dimen/spacing_tiny"
+            android:paddingRight="@dimen/spacing_tiny"
+            android:id="@+id/title_name"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="商品详情" />
+
+        <ImageView
+            android:paddingTop="@dimen/spacing_smallest"
+            android:id="@+id/iv_good_detai_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_good_detai_share"
+            android:paddingLeft="@dimen/spacing_smaller"
+            />
+
+        <ImageView
+            android:paddingTop="@dimen/spacing_smallest"
+            android:layout_marginLeft="@dimen/spacing_smallest"
+            android:id="@+id/iv_good_detai_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/spacing_smaller"
+            android:paddingRight="@dimen/spacing_small"
+             />
+    </RelativeLayout>
+</FrameLayout>
